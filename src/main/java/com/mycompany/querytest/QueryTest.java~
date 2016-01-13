@@ -21,7 +21,6 @@ public class QueryTest {
 
                 if (KbCollectionFactory.existsAsType(arg)) {
                     KbCollection collection = KbCollectionFactory.get(arg);
-
                     Set<KbIndividual> indivs = (Set<KbIndividual>) collection.getInstances();
                     Set<KbCollection> gens   = (Set<KbCollection>) collection.getGeneralizations();
                     Set<KbCollection> specs  = (Set<KbCollection>) collection.getSpecializations();
